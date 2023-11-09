@@ -1,0 +1,52 @@
+<html>
+
+<head>
+    <title>leaderboard</title>
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="leaderboard.css">
+
+<body>
+    <div class="d-flex flex-column align-items-center">
+        <div class="d-flex flex-column justify-content-center align-items-center mt-4">
+            <h3 class="text-capitalize">30 days of javascript challenge leaderboard</h3>
+        </div>
+        <div class="d-flex flex-row justify-content-center align-items-center m-3">
+            <input id="first-name" type="text" placeholder="first name" class="mr-2">
+            <input id="last-name" type="text" placeholder="last name" class="mr-2">
+            <input id="country" type="text" placeholder="country" class="mr-2">
+            <input id="player-score" type="text" placeholder="player score" class="mr-2">
+            <button class="btn text-capitalize text-white bg add-btn" onclick="loadPlayer()"> add player </button>
+        </div>
+        <div class="d-flex flex-column justify-content-center align-items-center w-100">
+            <h6 class="text-danger" id="alart"></h6>
+        </div>
+        <div class="d-flex  justify-content-center align-items-center w-100">
+            <table class="table bg w-51 text-uppercase" id="player">
+                <tr class="  br-bot">
+                    <td>
+                        <div class="d-flex flex-column">
+                            <p class="m-0">martha yohanes</p>
+                            <p class="m-0 font-w">jan 30 2020 01.20</p>
+                        </div>
+                    </td>
+                    <td>finland</td>
+                    <td>85</td>
+                    <td>
+                        <div class="d-flex flex-row">
+                            <button class="bg-white text-danger row-btn del-btn"><i
+                                    class="fa-solid fa-trash-can"></i></button>
+                            <button class="bg-white text-primary row-btn">+5</button>
+                            <button class="bg-white text-primary row-btn">-5</button>
+                        </div>
+
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="leaderboard.js"></script>
+</body>
+
+</html>
